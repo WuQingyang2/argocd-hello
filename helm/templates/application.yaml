@@ -15,4 +15,5 @@ spec:
   ignoreDifferences:
     - group: apps
       kind: Deployment
-      jqPathExpressions: 'until(true == false; [.] + [1])'
+      jqPathExpressions: 
+        - "until(true == false; [.] + [1])"
